@@ -7,8 +7,14 @@ public class Main {
         Author author2 = new Author("Джаннет", "Уоллс");
         Book book2 = new Book("Замок из стекла", author2, 2011);
         book2.setYearPublication(1999);
-        System.out.println(book1.getTitleOfBook() + " : " + author1.getAuthorName() + " " + author1.getAuthorLastName() + " : " + book1.getYearPublication());
-        System.out.println(book2.getTitleOfBook() + " : " + author2.getAuthorName() + " " + author2.getAuthorLastName() + " : " + book2.getYearPublication());
+        Author author3 = new Author("Джаннет", "Уоллс");
+        Book book3 = new Book("Замок из стекла", author3, 2011);
+        System.out.println(book1);
+        System.out.println(book3);
+        System.out.println(book2.hashCode() == book3.hashCode());
+        System.out.println(book2.equals(book3));
+        System.out.println(book1.hashCode() == book3.hashCode());
+
     }
 }
 
